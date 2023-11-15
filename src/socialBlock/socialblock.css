@@ -1,0 +1,31 @@
+
+
+:root{
+    --textDecoration: none;
+    --textColor: #000;
+      --fontSize: 25px;
+}
+
+.socialBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social>a{
+color: var(--textColor);
+transition: all 0.5s ease;
+font-size: var(--fontSize);
+}
+
+.social>a:hover{
+    transform: scale(1.1);
+}

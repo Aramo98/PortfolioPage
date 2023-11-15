@@ -1,0 +1,10 @@
+ 
+    function NoPage(params) {
+        return (
+            <>
+            <h1>404</h1>
+            </>
+        )
+    }
+
+    export default NoPage

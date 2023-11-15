@@ -1,0 +1,97 @@
+
+.educationContainer{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.MyEducation{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+
+}
+
+.skillsBlock{
+    width: 100%; 
+    
+}
+
+.skillsBlock .line{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.skillsBlock .line .percentLine{
+    height: 20px;
+    width: 100%;
+ 
+    position: relative;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+.skillsBlock .line .percentLine>.progress{
+background-color: rgb(91, 9, 9);
+}
+
+.skillsBlock .line .percentLine>.progress_1{
+    width: 85%;
+}
+.skillsBlock .line .percentLine>.progress_2{
+    width: 75%;
+}
+
+.skillsBlock .line .percentLine>.progress_3{
+    width: 75%;
+}
+.skillsBlock .line .percentLine>.progress_4{
+    width: 70%;
+}
+.skillsBlock .line .percentLine>.progress_5{
+    width: 68%;
+}
+.skillsBlock .line .percentLine>.progress_6{
+    width: 68%;
+}
+.skillsBlock .line .percentLine>.progress_7{
+    width: 50%;
+}
+
+
+.DeveloperResume>.block{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.DeveloperResume>.block>p{
+    font-size: 25px;
+}
+
+.DeveloperResume>.block>p>span{
+    font-size: 18px;
+}
+
+@media screen and (max-width:991px) {
+    .MyEducation{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

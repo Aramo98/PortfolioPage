@@ -1,0 +1,173 @@
+
+:root{
+  --color: #000;
+  --backgroundColor: #fff;
+  --textDecoration: none
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.generalBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+
+}  
+
+.leftSide{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: beige;
+  gap: 3%;
+}
+
+.rightSide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.lightDarkToggle{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+}
+
+.circle{
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.faMoon,
+.faSun{
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.avatarBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.avatar{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.avatar>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.rightSide>.image{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rightSide>.image>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10%;
+}
+
+.overlay .contactButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  position: relative;
+}
+
+.overlay .contactButton>a{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: var(--color);
+background-color: var(--backgroundColor);
+text-decoration: var(--textDecoration);
+font-weight: bold;
+}
+
+.overlay .contactButton>a::before{
+  content: "Contact Me";
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  overflow:hidden;
+
+}
+
+.overlay .contactButton>a:hover:before{
+  height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .leftSide{
+    width: 100%;
+  }
+  .generalBlock{
+    height: auto;
+    flex-direction: column;
+  }
+}
